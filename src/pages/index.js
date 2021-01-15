@@ -1,5 +1,16 @@
-import React from "react"
+import React from "react";
+
+// STYLE
+import '../styles/main.scss';
+
+// COMPONENTS
+import App from '../components/App.js';
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <>
+    <App />
+    </>
+
+  ) 
 }
