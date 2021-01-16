@@ -8,6 +8,7 @@ export default function Projects() {
     
     return (
         <section className='projects'>
+            <hr/>
             <h1>here are some of my projects:</h1>
 
             {projects.map(project => {

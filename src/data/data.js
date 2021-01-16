@@ -14,29 +14,20 @@ export const aboutData = {
   export const projectsData = [
     {
       id: uuidv4(),
-      img: 'project.jpg',
-      title: 'Project #1',
-      info: 'fsad fdsaofslkj sadflijfdsa fsdlkjfdsa',
+      img: '',
+      title: 'Simple Twitter bot with Python',
+      info: 'Python Weekly Report is a great blogspot that collects the ten most popular Python questions asked on StackOverflow the week previous and publishes them all in a single post. I scrape the blog’s RSS feed and tweet each question separately.',
       deployedURL: 'www.com',  //if blank, no btn will appear
-      repoURL: 'www.com',     //if blank, no btn will appear
-      technologies: ['React', 'sdaf', 'asdf', 'fdsa']
+      repoURL: '',     //if blank, no btn will appear
+      technologies: ['Python', 'Twitter API', 'Heroku']
     },
     {
       id: uuidv4(),
-      img: 'project.jpg',
-      title: 'Project #3',
-      info: 'fsad fdsaofslkj sadflijfdsa fsdlkjfdsa',
-      deployedURL: 'www.com',  //if blank, no btn will appear
-      repoURL: 'www.com',     //if blank, no btn will appear
-      technologies: ['React', 'sdaf', 'asdf', 'fdsa']
-    },
-    {
-      id: uuidv4(),
-      img: 'project.jpg',
-      title: 'Project #3',
-      info: 'fsad fdsaofslkj sadflijfdsa fsdlkjfdsa',
-      deployedURL: 'www.com',  //if blank, no btn will appear
-      repoURL: 'www.com',     //if blank, no btn will appear
-      technologies: ['React', 'sdaf', 'asdf', 'fdsa']
+      img: '',
+      title: 'Portfolio with Gatsby and GitHub Pages',
+      info: "Gatsby is a great resource for generating static websites that can be hosted on GitHub pags for free (and Gatsby utilizes React to creat templates/components!)",
+      deployedURL: 'mattcanavan.dev',  //if blank, no btn will appear
+      repoURL: 'UPDATE THIS',     //if blank, no btn will appear
+      technologies: ['Gatsby', 'React', 'SCSS']
     },
   ];

@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <section className='header'>
             
-            <h3 className='header__text'>Matt Canavan</h3>
+            {/* <h3 className='header__text'>Matt Canavan</h3>
 
             <ul className='header__navcontainer'>
                 <li>
@@ -18,7 +18,7 @@ export default function Header() {
                     className='header__navlink'
                     >Projects</a>
                 </li>
-            </ul>
+            </ul> */}
 
         </section>
 
