@@ -17,7 +17,7 @@ export default function About() {
           <img className='about__img' src={headerImg} alt="mineral thin section" />
         </div>
         <div className='about__info'>
-          <h1>{byline}</h1>
+          <h1 className='about__byline'>{byline}</h1>
           <h3>{paragraphOne}</h3>
         
           {/* Btns*/}
