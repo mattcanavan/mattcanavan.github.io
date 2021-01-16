@@ -8,6 +8,7 @@ export default function Projects() {
     
     return (
         <section className='projects'>
+            <h1>here are some of my projects:</h1>
 
             {projects.map(project => {
                 const { id, img, title, info, deployedURL, repoURL, technologies } = project;
@@ -17,8 +18,8 @@ export default function Projects() {
                     <div key={id} className='projects__container'>
                         {/* TEXT CONTAINER */}
                         <div className='projects__text'>
-                            <h3>{title}</h3>
-                            <p><h4>{info}</h4></p>
+                            <h2>{title}</h2>
+                            <p><h3>{info}</h3></p>
                         </div>
 
                         {/* SKILLZ CONTAINER */}

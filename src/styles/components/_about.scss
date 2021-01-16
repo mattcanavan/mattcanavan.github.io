@@ -1,0 +1,35 @@
+.about__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    border: 1px black solid;
+
+}
+
+    // https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image
+    .about__imgcontainer {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+        .about__img {
+            display: inline;
+            margin: 0 auto;
+            margin-left: -30%; //centers the image
+            height: 100%;
+            width: auto;
+        }
+
+
+        .btn__container{
+            margin-bottom: 10px;
+        }
+        
+        .btn_svg {
+            padding: 0 10px 10px 10px;
+        }

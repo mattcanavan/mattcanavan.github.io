@@ -6,7 +6,7 @@ export default function Header() {
             
             <h3 className='header__text'>Matt Canavan</h3>
 
-            <ul className='header__navigation'>
+            <ul className='header__navcontainer'>
                 <li>
                     <a href='#about'
                     className='header__navlink'

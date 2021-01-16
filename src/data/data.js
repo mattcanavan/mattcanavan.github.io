@@ -2,9 +2,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 // ABOUT DATA
 export const aboutData = {
-    byline: "Hello, I'm Matt",
-    img: 'profile.jpg',
-    paragraphOne: 'This is the first paragraph',
+    byline: "Hi, I'm Matt",
+    img: '',
+    paragraphOne: "I'm passionate about JavaScript and life-long learning.",
     githubURL: 'https://github.com/mattcanavan',
     email: 'email@email.ads',
   };
