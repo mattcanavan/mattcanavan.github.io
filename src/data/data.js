@@ -5,6 +5,8 @@ export const aboutData = {
     byline: "Hello, I'm Matt",
     img: 'profile.jpg',
     paragraphOne: 'This is the first paragraph',
+    githubURL: 'https://github.com/mattcanavan',
+    email: 'email@email.ads',
   };
   
   
@@ -13,34 +15,28 @@ export const aboutData = {
     {
       id: uuidv4(),
       img: 'project.jpg',
-      title: '',
-      info: '',
-      info2: '',
-      url: '',
-      repo: '', // if no repo, the button will not show up
+      title: 'Project #1',
+      info: 'fsad fdsaofslkj sadflijfdsa fsdlkjfdsa',
+      deployedURL: 'www.com',  //if blank, no btn will appear
+      repoURL: 'www.com',     //if blank, no btn will appear
+      technologies: ['React', 'sdaf', 'asdf', 'fdsa']
     },
     {
       id: uuidv4(),
       img: 'project.jpg',
-      title: '',
-      info: '',
-      info2: '',
-      url: '',
-      repo: '', // if no repo, the button will not show up
+      title: 'Project #3',
+      info: 'fsad fdsaofslkj sadflijfdsa fsdlkjfdsa',
+      deployedURL: 'www.com',  //if blank, no btn will appear
+      repoURL: 'www.com',     //if blank, no btn will appear
+      technologies: ['React', 'sdaf', 'asdf', 'fdsa']
     },
     {
       id: uuidv4(),
       img: 'project.jpg',
-      title: '',
-      info: '',
-      info2: '',
-      url: '',
-      repo: '', // if no repo, the button will not show up
+      title: 'Project #3',
+      info: 'fsad fdsaofslkj sadflijfdsa fsdlkjfdsa',
+      deployedURL: 'www.com',  //if blank, no btn will appear
+      repoURL: 'www.com',     //if blank, no btn will appear
+      technologies: ['React', 'sdaf', 'asdf', 'fdsa']
     },
   ];
-  
-  // CONTACT DATA
-  export const contactData = {
-    github: 'github/username',
-    email: 'email@email.ads',
-  };

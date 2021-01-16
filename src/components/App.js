@@ -1,7 +1,11 @@
 import React , { useState, useEffect } from 'react';
 
 // COMPONENTS
+import Header from './Header/Header.js';
 import About from './About/About.js';
+import Projects from './Projects/Projects.js';
+
+import Footer from './Footer/Footer.js';
 
 // DATA
 import { PortfolioProvider } from '../context/context.js';
@@ -28,7 +32,10 @@ export default function App() {
 
     return (
         <PortfolioProvider value={{ about, projects }}>
+        <Header />
         <About />
+        <Projects />
+        <Footer />
         </PortfolioProvider>
     )
 }
