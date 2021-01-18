@@ -1,0 +1,25 @@
+@media screen and (min-width: 375px) {
+    // display content
+}
+
+@media screen and (min-width: 600px) {
+    .projects__container{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .projects {
+        margin-right: 25vw;
+        margin-left: 25vw;
+    }
+    
+    .projects__container{
+        width: 475px;
+    }
+
+    *{
+        border: 1px tomato solid;
+    }
+}

@@ -55,15 +55,3 @@ html {
         background-color: $hover-color;
         color: $blackish-color
     }
-
-
-@media screen and (min-width: 1000px) {
-    // display content
-}
-
-@media screen and (min-width: 1001px) {
-    #___gatsby {
-        margin-right: 25%;
-        margin-left: 25%;
-    }
-}
