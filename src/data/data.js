@@ -25,7 +25,7 @@ export const aboutData = {
       id: uuidv4(),
       img: '',
       title: 'Portfolio with Gatsby and GitHub Pages',
-      info: "Gatsby is a great resource for generating static websites that can be hosted on GitHub pags for free (and Gatsby utilizes React to creat templates/components!)",
+      info: "Gatsby is a great resource for generating static websites that can be hosted on GitHub pages for free (and Gatsby utilizes React to create templates/components!)",
       deployedURL: 'mattcanavan.dev',  //if blank, no btn will appear
       repoURL: 'UPDATE THIS',     //if blank, no btn will appear
       technologies: ['Gatsby', 'React', 'SCSS']
