@@ -3,8 +3,9 @@
     flex-direction: column;
     text-align: center;
     border: 1px black solid;
-    margin-top: 15px;
-    padding: 0 10px 0 10px
+    padding: 0 10px 0 10px;
+    position: relative;     //for img over div
+    padding-top: 70px;      //for img over div
 }
 
 .about__container{
@@ -18,9 +19,11 @@
     .about__imgcontainer {
         width: 150px;
         height: 150px;
-        position: relative;
+        position: absolute; //for img over div
         overflow: hidden;
         border-radius: 50%;
+        top: 70px;          //for img over div
+        z-index: 1;         //for img over div
     }
 
         .about__img {
