@@ -41,7 +41,7 @@ export default function Projects() {
                                 target='_blank'
                                 rel='noreferrer'
                                 href={deployedURL}>
-                                    See Live
+                                    View Project
                                 </a>
                             )}
 
