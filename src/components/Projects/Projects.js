@@ -12,7 +12,7 @@ export default function Projects() {
             <h1>here are some of my projects:</h1>
 
             {projects.map(project => {
-                const { id, img, title, info, deployedURL, repoURL, technologies } = project;
+                const { id, title, info, deployedURL, repoURL, technologies } = project;
                 
                 return (
                     <>
