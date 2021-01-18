@@ -9,9 +9,8 @@ export default function About() {
   const { byline, paragraphOne, githubURL, email } = about
 
   return (
-    <section className="about">
+    <section className="about__container">
         {/* TEXT CONTAINER */}
-      <div className="about__container">
         
         <div className='about__imgcontainer'>
           <img className='about__img' src={headerImg} alt="mineral thin section" />
@@ -61,7 +60,6 @@ export default function About() {
             </a>
           </div>
         </div>
-      </div>
     </section>
   )
 }
