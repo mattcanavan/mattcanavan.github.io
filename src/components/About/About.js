@@ -10,8 +10,8 @@ export default function About() {
 
   return (
     <section className="about__container">
-        {/* TEXT CONTAINER */}
         
+        {/* IMG > TEXT > Btns */}
         <div className='about__imgcontainer'>
           <img className='about__img' src={headerImg} alt="mineral thin section" />
         </div>
