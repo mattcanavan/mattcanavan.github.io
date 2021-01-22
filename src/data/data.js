@@ -6,7 +6,7 @@ export const aboutData = {
     img: '',
     paragraphOne: "I'm passionate about JavaScript and life-long learning.",
     githubURL: 'https://github.com/mattcanavan',
-    email: 'hello@mattpy.com',
+    email: 'mailto:hello@mattpy.com',
   };
   
   
