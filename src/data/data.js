@@ -28,6 +28,6 @@ export const aboutData = {
       info: "Gatsby is a great resource for generating static websites that can be hosted on GitHub pages for free (and Gatsby utilizes React to create templates/components!)",
       deployedURL: 'https://mattcanavan.dev',  //if blank, no btn will appear
       repoURL: 'https://github.com/mattcanavan/mattcanavan.github.io',     //if blank, no btn will appear
-      technologies: ['Gatsby', 'React', 'Contect API', 'SCSS']
+      technologies: ['Gatsby', 'React', 'Context API', 'SCSS']
     },
   ];
