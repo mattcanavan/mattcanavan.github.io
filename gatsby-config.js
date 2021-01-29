@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-plugin-sass`,
@@ -23,7 +23,7 @@ module.exports = {
     short_name: `starter`,
     start_url: `/`,
     display: `minimal-ui`,
-    icon: `src/data/images/favicon-32x32.png`, // This path is relative to the root of the site.
+    icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
     },
   },
 ],
