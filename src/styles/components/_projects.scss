@@ -1,7 +1,3 @@
-// *{
-//   border: 1px tomato solid;
-// }
-
 hr {
   margin-top: 40px;
   border: 1px black dashed;
@@ -13,7 +9,7 @@ hr {
   margin-top: 20px;
 }
 
-.project {
+.project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +19,7 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
 
-  .project__imgContainer {
+  .img-container {
     // set container width
     width: 100%;
     max-width: 500px;
@@ -34,7 +30,7 @@ hr {
       border: 1px lightgray solid;
       
       .image{
-        // set img to 100% container width
+        // set image to 100% container width
         max-width: 100%;
         height: auto;
       }
@@ -42,7 +38,7 @@ hr {
     }
   }
 
-  .project__text {
+  .text-container {
 
     h3:first-child{
       // targeting Key Skills h3
@@ -51,7 +47,7 @@ hr {
         text-decoration: underline;
     }
 
-    .project__text__skillz {
+    .text-container__skillz {
       li {
         font-weight: bold;
         font-style: italic;
@@ -59,7 +55,7 @@ hr {
       }
     }
 
-    .project__text__btns {
+    .text-container__btns {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -71,6 +67,39 @@ hr {
         background-color: $blackish-color;
         margin-bottom: 10px;
       }
+
+      .btn:hover {
+        transition: all 0.1s ease-in-out;
+        background-color: $hover-color;
+        color: $blackish-color
+      }
     }
+  }
+}
+
+// BREAKPOINTS
+@media screen and (min-width: 800px){
+  .project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-left: auto;  //centers container
+    margin-right: auto; //centers container
+
+    .img-container{
+      width: 40%;
+    }
+
+    .text-container {
+      width: 55%;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .project-container{
+    max-width: 950px;
   }
 }
