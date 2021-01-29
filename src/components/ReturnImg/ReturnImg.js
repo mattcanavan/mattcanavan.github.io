@@ -17,8 +17,8 @@ export default function ReturnImg({ filename, alt }) {
             name
             relativePath
             childImageSharp {
-              fluid(maxWidth: 650) {
-                ...GatsbyImageSharpFluid
+              fixed(width: 500) {
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -36,9 +36,9 @@ export default function ReturnImg({ filename, alt }) {
   if (!img) return null;
 
   // else:
-  const imgFluid = img.node.childImageSharp.fluid;
+  const imgFixed = img.node.childImageSharp.fixed;
 
-  return <Img alt={alt} fluid={imgFluid} />;
+  return <Img className="image" alt={alt} fixed={imgFixed} />;
 }
 
 ReturnImg.prototypes = {
