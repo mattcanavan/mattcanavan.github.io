@@ -7,27 +7,16 @@ import "../styles/main.scss"
 // DATA
 import { headData } from "../data/data.js"
 
-// COMPONENTS
-import App from "../components/App.js"
+export default function FourOhFour() {
 
-export default function Home() {
-  const { title, lang, description } = headData
-
+    const { lang } = headData
   return (
     <>
-    
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title}</title>
+        <title>Page not found</title>
         <html lang={lang} />
-        <meta
-          name="description"
-          content={description}
-        />
       </Helmet>
-
-      <App />
-
     </>
   )
 }
