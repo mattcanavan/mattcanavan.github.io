@@ -1,41 +1,60 @@
 hr {
-    margin-top: 40px;
-    border: 1px black dashed;
-    width: 70vw;
+  margin-top: 40px;
+  border: 1px black dashed;
+  width: 70vw;
 }
 
-.projects {
-    margin: 0 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.title {
+  text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 15px;
+  padding: 15px;
 
-    .projects__container{
-        border: 1px black solid;
-        padding: 0 20px 0 20px;
-        margin-bottom: 20px;
+  .project__img {
+    background-color: lightgreen;
+
+    img {
+      // w/h cant exceed 500px and aspect ratio is not thrown off
+      max-height: 500px;
+      max-width: 500px;
+      // height:auto;
+      // width:auto;
+    }
+  }
+
+  .project__text {
+
+    h3:first-child{
+        padding-top: 10px;
+        line-height: 0;
+        text-decoration: underline;
     }
 
-    .projects__btns{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-bottom: 20px;
+    .project__text__skillz {
+      li {
+        font-weight: bold;
+        font-style: italic;
+
+      }
     }
 
-    .btn {
+    .project__text__btns {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+
+      .btn {
         padding: 5px 10px 5px 10px;
         background-color: $blackish-color;
         margin-bottom: 10px;
+      }
     }
-
-    li {
-        margin-left: 25px;
-    }
-
+  }
+}

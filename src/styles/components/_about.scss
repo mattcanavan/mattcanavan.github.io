@@ -1,50 +1,38 @@
-.about__info{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px black solid;
-    padding: 0 10px 0 10px;
-    position: relative;     //for img over div
-    padding-top: 70px;      //for img over div
-}
+.about{
+    .about__background{
+        // text overlay background img https://codesandbox.io/examples/package/gatsby-background-image
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        padding: 0;
 
-.about__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-    // https://stackoverflow.com/questions/26421274/css-circular-cropping-of-rectangle-image
-    .about__imgcontainer {
-        width: 150px;
-        height: 150px;
-        position: absolute; //for img over div
-        overflow: hidden;
-        border-radius: 50%;
-        top: 70px;          //for img over div
-        z-index: 1;         //for img over div
     }
 
-        .about__img {
-            display: inline;
-            margin: 0 auto;
-            margin-left: -30%; //centers the image
-            height: 100%;
-            width: auto;
-        }
+    .about__bubble{
+        border-radius: 50%;
+        width: 450px;
+        height: 450px;
+        padding: 10px;
+        background: #fff;
+        border: 3px solid #000;
+        color: #000;
+        text-align: center;
+        display: block;
 
 
-        .btn__container{
+        .about__bubble_btns{
             margin-bottom: 10px;
-        }
-        
-        a.btn_svg {
-            padding: 0 10px 10px 10px;
-            text-decoration: none;
-            background-color: white;
-        }
 
-.about__byline{
-    line-height: 0;
+            a.btn_svg {
+                padding: 0 10px 10px 10px;
+                text-decoration: none;
+                background-color: white;
+            }
+
+        }
+    }
 }
+
+
