@@ -28,18 +28,18 @@ export default function About() {
       {/* https://github.com/timhagn/gbitest/blob/3251c19ca4e89d1c9ab38a9235b0c551cbb1bbe7/src/components/FullBackground.js */}
 
       <BackgroundImage
-      className="about"
+      className="about-container"
         fluid={data.file.childImageSharp.fluid}
         alt="oil paint on canvas"
         backgroundColor={`#040e18`}
       >
         {/* ABOUTME BUBBLE */}
-        <div className="about__bubble">
+        <div className="bubble-container">
           <h1>{byline}</h1>
           <h3>{aboutMe}</h3>
 
           {/* Btns*/}
-          <div className="about__bubble__btns">
+          <div className="bubble-container__btns">
             <a
               title="GitHub"
               className="btn_svg"
