@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 
 // DATA
 import PortfolioContext from "../../context/context";
-import headerImg from '../../images/rotating_mineral.gif';
+// import headerImg from '../../images/rotating_mineral.gif';
 
 export default function About() {
   const { about } = useContext(PortfolioContext)
@@ -13,7 +13,7 @@ export default function About() {
         
         {/* IMG > TEXT > Btns */}
         <div className='about__imgcontainer'>
-          <img className='about__img' src={headerImg} alt="mineral thin section" />
+          {/* <img className='about__img' src={headerImg} alt="mineral thin section" /> */}
         </div>
         <div className='about__info'>
           <h1 className='about__byline'>{byline}</h1>

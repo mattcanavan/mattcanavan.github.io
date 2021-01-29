@@ -1,5 +1,8 @@
 import React, { useContext } from 'react';
 
+// COMPONENTS
+import ProjectImages from '../ReturnImages/ProjectImages.js'
+
 // DATA
 import PortfolioContext from '../../context/context';
 
@@ -12,7 +15,7 @@ export default function Projects() {
             <h1>here are some of my projects:</h1>
 
             {projects.map(project => {
-                const { id, title, info, deployedURL, repoURL, technologies } = project;
+                const { id, img, alt, title, info, deployedURL, repoURL, technologies } = project;
                 
                 return (
                     <>
@@ -21,6 +24,7 @@ export default function Projects() {
                         <div className='projects__text'>
                             <h2>{title}</h2>
                             <p><h3>{info}</h3></p>
+                            <ProjectImages alt={alt} filename={img} />
                         </div>
 
                         {/* SKILLZ CONTAINER */}
