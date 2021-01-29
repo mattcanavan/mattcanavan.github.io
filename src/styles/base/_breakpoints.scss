@@ -7,5 +7,19 @@
 }
 
 @media screen and (min-width: 800px) {
+    *{
+        border: 1px blue solid;
+    }
+    .project {
+        display: flex;
+        flex-direction: row;
+
+        .project__imgContainer{
+            width: 40%
+        }
+        .project__text{
+            width: 55%;
+        }
+    }
 
 }

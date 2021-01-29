@@ -5,7 +5,7 @@
 // FONT Size
 $default-font-size: 1.8rem;
 $mid-font-size: 2.5rem;
-$big-font-size: 4rem;
+$big-font-size: 4.5rem;
 
 // FONT Color
 $blackish-color:  #2d2b2b ;
@@ -21,36 +21,38 @@ html {
     color: $blackish-color;
     margin: 0;
     padding: 0;
+
+    body {
+        font-family: 'Abril Fatface', sans-serif;
+        font-size: $default-font-size;
+
+        h1 {
+            font-size: $big-font-size; 
+        }
+    
+        h2 {
+            font-size: $mid-font-size;
+        }
+    
+        h3, ul, li {
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        a,
+        a:link,
+        a:hover,
+        a:visited,
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+    
+        a:hover {
+            transition: all 0.1s ease-in-out;
+            background-color: $hover-color;
+            color: $blackish-color
+        }
+      }
   }
   
-  body {
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: $default-font-size;
-  }
-
-    h1 {
-        font-size: $big-font-size; 
-    }
-
-    h2 {
-        font-size: $mid-font-size;
-    }
-
-    h3, ul, li {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    a,
-    a:link,
-    a:hover,
-    a:visited,
-    a:active {
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        transition: all 0.1s ease-in-out;
-        background-color: $hover-color;
-        color: $blackish-color
-    }
+  
