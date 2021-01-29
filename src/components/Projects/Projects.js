@@ -32,8 +32,10 @@ export default function Projects() {
             {/* CONTAINER */}
             <div key={id} className="project">
               {/* IMG CONTAINER */}
-              <div className="project__img">
+              <div className="project__imgContainer">
+                <p>
                 <ReturnImg filename={img} alt={alt} />
+                </p>
               </div>
 
               {/* TEXT CONTAINER */}
