@@ -13,7 +13,7 @@ export default function About() {
     {
       file(relativePath: { eq: "steve-johnson-header.jpg" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 4160) {
+          fluid(quality: 95) {
             ...GatsbyImageSharpFluid
           }
         }
