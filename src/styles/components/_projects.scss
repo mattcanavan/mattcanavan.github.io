@@ -1,3 +1,7 @@
+// *{
+//   border: 1px tomato solid;
+// }
+
 hr {
   margin-top: 40px;
   border: 1px black dashed;
@@ -77,13 +81,19 @@ hr {
   }
 }
 
+// to flip-flop img and text for each project container
+.project-container:nth-last-of-type(odd) {
+  .img-container{
+    order:2;
+  }
+}
+
 // BREAKPOINTS
 @media screen and (min-width: 800px){
   .project-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0;
+    justify-content: space-around;
     margin-left: auto;  //centers container
     margin-right: auto; //centers container
 
@@ -93,7 +103,6 @@ hr {
 
     .text-container {
       width: 55%;
-      margin-left: 15px;
     }
   }
 }
