@@ -38,7 +38,8 @@ export default function ReturnImg({ filename, alt }) {
   // else:
   const imgFluid = img.node.childImageSharp.fluid;
 
-  return <Img className="image" alt={alt} fluid={imgFluid} />;
+  return <Img className="image" alt={alt} fluid={imgFluid} imgStyle={{objectFit: `contain`}} />;
+  // had to define imgStyle here otherwise defaulting to cover. couldnt fix w/CSS ...
 }
 
 ReturnImg.prototypes = {
