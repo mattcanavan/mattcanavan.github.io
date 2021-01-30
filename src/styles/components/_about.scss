@@ -1,12 +1,18 @@
-.about-container{
-    width: 100%;
-    height: 82vh;
-    background-size: initial; // maxHeight = 780px in About.js
-    background-repeat: repeat;
+*{
+    border: 1px tomato solid;
+}
 
+.about-ctnr{
+    height: 82vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    .about-ctnr__img-ctnr{
+        width:100%;
+        height: 100%;
+    }
 
     .bubble-container{
         display: flex;
