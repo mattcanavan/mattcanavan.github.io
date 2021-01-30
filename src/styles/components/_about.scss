@@ -1,32 +1,46 @@
-.about{
-    .about__background{
-        // text overlay background img https://codesandbox.io/examples/package/gatsby-background-image
-        top: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-        padding: 0;
+.about-container{
+    width: 100%;
+    height: 82vh;
+    background-size: initial; // maxHeight = 780px in About.js
+    background-repeat: repeat;
 
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .about__bubble{
-        border-radius: 50%;
-        width: 450px;
-        height: 450px;
-        padding: 10px;
-        background: #fff;
-        border: 3px solid #000;
-        color: #000;
+    .bubble-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        display: block;
 
 
-        .about__bubble_btns{
+        // bubble style
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        background: white;
+        border: 3px solid black;
+
+        >h1{
+            // remove margin from h1 tag
+            margin: 0;
+        }
+
+        >h3{
+            // fine-tune bubble spacing
+            margin:0;
+            padding-left: 20px;
+            padding-right: 20px;
             margin-bottom: 10px;
+            margin-top: 10px;
+        }
 
+        .bubble-container__btns{
             a.btn_svg {
-                padding: 0 10px 10px 10px;
+                padding: 0 10px 0px 10px;
                 text-decoration: none;
                 background-color: white;
             }

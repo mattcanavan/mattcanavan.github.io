@@ -17,7 +17,7 @@ export default function ReturnImg({ filename, alt }) {
             name
             relativePath
             childImageSharp {
-              fluid(maxWidth: 650) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -38,7 +38,7 @@ export default function ReturnImg({ filename, alt }) {
   // else:
   const imgFluid = img.node.childImageSharp.fluid;
 
-  return <Img alt={alt} fluid={imgFluid} />;
+  return <Img className="image" alt={alt} fluid={imgFluid} />;
 }
 
 ReturnImg.prototypes = {

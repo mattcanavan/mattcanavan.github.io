@@ -1,3 +1,7 @@
+// *{
+//   border: 1px tomato solid;
+// }
+
 hr {
   margin-top: 40px;
   border: 1px black dashed;
@@ -6,36 +10,48 @@ hr {
 
 .title {
   text-align: center;
+  margin-top: 20px;
 }
 
-.project {
+.project-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  margin: 15px;
-  padding: 15px;
+  align-items: center;
 
-  .project__img {
-    background-color: lightgreen;
+  border: 1px solid lightgray;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    img {
-      // w/h cant exceed 500px and aspect ratio is not thrown off
-      max-height: 500px;
-      max-width: 500px;
-      // height:auto;
-      // width:auto;
+  .img-container {
+    // set container width
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px; //might not need when fix img placement issue
+    overflow: hidden; //might not need when fix img placement issue
+    
+    p{
+      border: 1px lightgray solid;
+      
+      .image{
+        // set image to 100% container width
+        max-width: 100%;
+        height: auto;
+      }
+
     }
   }
 
-  .project__text {
+  .text-container {
 
     h3:first-child{
+      // targeting Key Skills h3
         padding-top: 10px;
         line-height: 0;
         text-decoration: underline;
     }
 
-    .project__text__skillz {
+    .text-container__skillz {
       li {
         font-weight: bold;
         font-style: italic;
@@ -43,7 +59,7 @@ hr {
       }
     }
 
-    .project__text__btns {
+    .text-container__btns {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -55,6 +71,44 @@ hr {
         background-color: $blackish-color;
         margin-bottom: 10px;
       }
+
+      .btn:hover {
+        transition: all 0.1s ease-in-out;
+        background-color: $hover-color;
+        color: $blackish-color
+      }
     }
+  }
+}
+
+// to flip-flop img and text for each project container
+.project-container:nth-last-of-type(odd) {
+  .img-container{
+    order:2;
+  }
+}
+
+// BREAKPOINTS
+@media screen and (min-width: 800px){
+  .project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: auto;  //centers container
+    margin-right: auto; //centers container
+
+    .img-container{
+      width: 40%;
+    }
+
+    .text-container {
+      width: 55%;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .project-container{
+    max-width: 950px;
   }
 }

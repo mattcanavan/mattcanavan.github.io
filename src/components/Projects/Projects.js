@@ -30,19 +30,21 @@ export default function Projects() {
         return (
           <>
             {/* CONTAINER */}
-            <div key={id} className="project">
+            <div key={id} className="project-container">
               {/* IMG CONTAINER */}
-              <div className="project__img">
+              <div className="img-container">
+                <p>
                 <ReturnImg filename={img} alt={alt} />
+                </p>
               </div>
 
               {/* TEXT CONTAINER */}
-              <div className="project__text">
+              <div className="text-container">
                 <h2>{title}</h2>
                 <h3>{info}</h3>
 
                 {/* SKILLZ DIV */}
-                <ul className="project__text__skillz">
+                <ul className="text-container__skillz">
                   <h3>Key Skills:</h3>
                   {keySkills.map((element, index) => {
                     return <li key={index}>{element}</li>
@@ -50,7 +52,7 @@ export default function Projects() {
                 </ul>
 
                 {/* BUTTONS DIV */}
-                <div className="project__text__btns">
+                <div className="text-container__btns">
                   {/* DEPLOYED  */}
                   {deployedURL && (
                     <a
