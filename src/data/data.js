@@ -26,7 +26,7 @@ export const projectsData = [
     deployedURL: "https://mattcanavan.dev/visualize-binary-tree-from-json/", //if blank, no btn will appear
     repoURL: "https://github.com/mattcanavan/visualize-binary-tree-from-json", //if blank, no btn will appear
     keySkills: ["Data Structures", "Deserialize a JSON String to a Binary Tree", "Measure depth of tree", "Calculate breadth-first traverse"],
-    img: "visualize-binary-tree.png",
+    img: "binary-tree.png",
     alt: "binary tree with 15 nodes"
   },
   {
@@ -34,12 +34,12 @@ export const projectsData = [
     title: "RESTful API with Express.js, Node and Knex",
     info: 
     `Served as the backend of a React App. Users were authenticated with JWT. 
-    SQLite3 was used in development and PostgreSQL in product for data persistence
+    SQLite3 was used in development and PostgreSQL in product for data persistence.
     `,
     deployedURL: "", //if blank, no btn will appear
     repoURL: "https://github.com/BW-TruckTracker/BackEnd", //if blank, no btn will appear
     keySkills: ["Express.js", "Knex ORM", "Heroku", "Teamwork (group project)"],
-    img: "backend-node-express.png",
+    img: "backend.png",
     alt: "README from github repo"
   },
   {
@@ -52,7 +52,7 @@ export const projectsData = [
     deployedURL: "https://mattcanavan.dev", //if blank, no btn will appear
     repoURL: "https://github.com/mattcanavan/mattcanavan.github.io", //if blank, no btn will appear
     keySkills: ["Gatsby", "React", "GraphQL", "Context API", "SCSS"],
-    img: "gatsby-portfolio-one.png",
+    img: "gatsby.png",
     alt: "homepage of this very website",
   },
   {
@@ -64,7 +64,7 @@ export const projectsData = [
     deployedURL: "https://twitter.com/PopularPythonQs", //if blank, no btn will appear
     repoURL: "", //if blank, no btn will appear
     keySkills: ["Python", "Twitter API", "Heroku"],
-    img: "twitter-bot.png",
+    img: "twitter.png",
     alt: "twitter bio picture",
   },
 ]
