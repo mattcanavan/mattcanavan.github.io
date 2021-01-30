@@ -13,8 +13,8 @@ export default function About() {
     {
       file(relativePath: { eq: "steve-johnson-header.jpg" }) {
         childImageSharp {
-          fluid(quality: 95) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 70 maxHeight: 780 ) {
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
@@ -24,14 +24,12 @@ export default function About() {
   return (
     <section>
       {/* BACKGROUND IMG */}
-      {/*gatsby-image fluid not respecting maxHeight https://github.com/gatsbyjs/gatsby/issues/15167 */}
       {/* https://github.com/timhagn/gbitest/blob/3251c19ca4e89d1c9ab38a9235b0c551cbb1bbe7/src/components/FullBackground.js */}
 
       <BackgroundImage
       className="about-container"
         fluid={data.file.childImageSharp.fluid}
-        alt="oil paint on canvas"
-        backgroundColor={`#040e18`}
+        alt="oil paint on canvas. credit belongs to https://unsplash.com/@steve_j"
       >
         {/* ABOUTME BUBBLE */}
         <div className="bubble-container">
