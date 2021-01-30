@@ -81,15 +81,15 @@ hr {
   }
 }
 
-// to flip-flop img and text for each project container
+
+// BREAKPOINTS
+@media screen and (min-width: 800px){
+  // to flip-flop img and text for each project container
 .project-container:nth-last-of-type(odd) {
   .img-container{
     order:2;
   }
 }
-
-// BREAKPOINTS
-@media screen and (min-width: 800px){
   .project-container{
     display: flex;
     flex-direction: row;
