@@ -23,7 +23,7 @@ module.exports = {
     short_name: `starter`,
     start_url: `/`,
     display: `minimal-ui`,
-    icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
+    icon: `src/images/favicon-192x192.png`,
     },
   },
 ],
