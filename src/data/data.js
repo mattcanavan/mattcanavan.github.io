@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid"
 
 // HEAD DATA
 export const headData = {
-  title: "Matt",
+  title: "https://mattcanavan.dev/",
   lang: "en", // e.g: en, es, fr, jp
   description: "Welcome to my website",
 }
@@ -31,7 +31,7 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
-    title: "RESTful API with Express.js, Node and Knex",
+    title: "RESTful API with Express.js and Node",
     info: 
     `Served as the backend of a React App. Users were authenticated with JWT. 
     SQLite3 was used in development and PostgreSQL in product for data persistence.
