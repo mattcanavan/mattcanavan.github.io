@@ -11,7 +11,7 @@ export default function About() {
 
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "steve-johnson-header.jpg" }) {
+      file(relativePath: { eq: "header.jpg" }) {
         childImageSharp {
           fluid(quality: 70 maxHeight: 780 ) {
             ...GatsbyImageSharpFluid_noBase64
