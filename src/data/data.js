@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid"
 
 // HEAD DATA
 export const headData = {
-  title: "https://mattcanavan.dev/",
+  title: "mattcanavan.dev/",
   lang: "en", // e.g: en, es, fr, jp
   description: "Welcome to my website",
 }
@@ -19,13 +19,13 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv4(),
-    title: "Vizualize Binary Tree from JSON",
+    title: "Visualize Binary Tree from JSON",
     info: `JSON can represent a single binary tree node quiet well. 
-    But as the number of nodes increase, the verboseness increases as well and the tree can become difficult to imagine or draw.
+    But as the number of nodes increase, the verbosity increases as well and the tree can become difficult to imagine or draw.
     Sounds like a problem for a computer to solve!`,
     deployedURL: "https://mattcanavan.dev/visualize-binary-tree-from-json/", //if blank, no btn will appear
     repoURL: "https://github.com/mattcanavan/visualize-binary-tree-from-json", //if blank, no btn will appear
-    keySkills: ["Data Structures", "Deserialize a JSON String to a Binary Tree", "Measure depth of tree", "Calculate breadth-first traverse"],
+    keySkills: ["Deserialize JSON String to collection of nodes", "Measure depth of node tree", "Calculate breadth-first traverse"],
     img: "binary-tree.png",
     alt: "binary tree with 15 nodes"
   },
@@ -72,11 +72,11 @@ export const projectsData = [
 // template
 // {
 //   id: uuidv4(),
-//   title: "",
-//   info: "",
-//   deployedURL: "", //if blank, no btn will appear
-//   repoURL: "", //if blank, no btn will appear
-//   keySkills: [""],
-//   img: "",
-//   alt: ""
+//   title: ``,
+//   info: ``,
+//   deployedURL: ``, //if blank, no btn will appear
+//   repoURL: ``, //if blank, no btn will appear
+//   keySkills: [``],
+//   img: ``,
+//   alt: ``
 // },
