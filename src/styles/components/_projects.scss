@@ -1,7 +1,3 @@
-// *{
-//   border: 1px tomato solid;
-// }
-
 hr {
   margin-top: 40px;
   border: 1px black dashed;
@@ -17,11 +13,12 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 65%;
 
   border: 1px solid lightgray;
-  margin: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 40px;
 
   .img-container {
     // set container width
@@ -51,9 +48,18 @@ hr {
         text-decoration: underline;
     }
 
+    h3{
+      font-weight: normal;
+    }
+
+    h2{
+      //truncates highlight
+      width:fit-content; 
+    }
+
     .text-container__skillz {
+      // bullet points
       li {
-        font-weight: bold;
         font-style: italic;
 
       }
@@ -63,19 +69,22 @@ hr {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
-      margin-bottom: 20px;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 30px;
 
       .btn {
         padding: 5px 10px 5px 10px;
-        background-color: $blackish-color;
-        margin-bottom: 10px;
+        background-color: $hover-color;
+        color: $blackish-color;
+        margin-right: 5%;
+        text-decoration: none;
       }
-
+      
       .btn:hover {
         transition: all 0.1s ease-in-out;
-        background-color: $hover-color;
-        color: $blackish-color
+        background-color: $blackish-color;
+        color: white;
       }
     }
   }
@@ -84,8 +93,9 @@ hr {
 
 // BREAKPOINTS
 @media screen and (min-width: 800px){
+
+  .project-container:nth-last-of-type(odd) {
   // to flip-flop img and text for each project container
-.project-container:nth-last-of-type(odd) {
   .img-container{
     order:2;
   }
@@ -97,18 +107,15 @@ hr {
     margin-left: auto;  //centers container
     margin-right: auto; //centers container
 
+    min-width: 90%; //resizes container
+    margin: 50px;
+
     .img-container{
-      width: 40%;
+      width: 50%;
     }
 
     .text-container {
       width: 55%;
     }
-  }
-}
-
-@media screen and (min-width: 1000px){
-  .project-container{
-    max-width: 950px;
   }
 }

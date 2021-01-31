@@ -1,16 +1,17 @@
 // FONT
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"); //h1
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');    //body
+
 
 // FONT Size
 $default-font-size: 1.8rem;
-$mid-font-size: 2.5rem;
+$mid-font-size: 2.7rem;
 $big-font-size: 4.5rem;
 
 // FONT Color
 $blackish-color:  #2d2b2b ;
 
-// Btn HOVER Color
+// Btn HOVER Color Global
 $hover-color: #d6e0f5;
 
 html {
@@ -20,28 +21,22 @@ html {
     padding: 0;
 
     body {
-        font-family: 'Abril Fatface', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: $default-font-size;
-
+        
         h1 {
+            font-family: 'Abril Fatface', sans-serif;
             font-size: $big-font-size; 
         }
     
         h2 {
             font-size: $mid-font-size;
+            background-color: #f5ebd6;  //label color
         }
     
-        h3, ul, li {
-            font-family: 'Roboto', sans-serif;
-        }
-    
-        a,
-        a:link,
-        a:hover,
-        a:visited,
-        a:active {
-            text-decoration: none;
-            color: white;
+        a{
+            // global button
+            font-weight: 900;
         }
       }
   }
