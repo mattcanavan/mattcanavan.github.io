@@ -1,6 +1,7 @@
 import React , { useState, useEffect } from 'react';
 
 // COMPONENTS
+import Loading from './Loading.js';
 import About from './About/About.js';
 import Projects from './Projects/Projects.js';
 
@@ -26,7 +27,7 @@ export default function App() {
 
     // DISPLAY loading if data loading
     if (isLoading) {
-        return <h1>Loading ...</h1>
+        return <Loading />
     }
 
     return (
