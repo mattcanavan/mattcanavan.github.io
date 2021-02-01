@@ -55,6 +55,7 @@ hr {
     h2{
       //truncates highlight
       width:fit-content; 
+      text-align: center;
     }
 
     .text-container__skillz {
@@ -103,7 +104,7 @@ hr {
   .project-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: auto;  //centers container
     margin-right: auto; //centers container
 
@@ -112,10 +113,17 @@ hr {
 
     .img-container{
       width: 50%;
+      padding: 0 20px 0px 20px;
     }
-
+    
     .text-container {
-      width: 55%;
+      width: 40%;
+      padding: 0 20px 0px 20px;
+
+      h2{
+        // undoes text-align: center set for mobile
+        text-align:left
+      }
     }
   }
 }
