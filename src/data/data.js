@@ -56,6 +56,19 @@ export const projectsData = [
     alt: "homepage of this very website",
   },
   {
+  id: uuidv4(),
+  title: `Play Baccarat`,
+  info: 
+  `In this project I simulate the card game Baccarat with vanilla JS and Es6 promises to 
+  produce legible code. The deck of cards was built using a class and can be reused for 
+  other card games.`,
+  deployedURL: `https://mattcanavan.dev/play-baccarat/`, //if blank, no btn will appear
+  repoURL: `https://github.com/mattcanavan/play-baccarat`, //if blank, no btn will appear
+  keySkills: ["OOP JavaScript", "CSS Grid", "Es6 Promises"],
+  img: `baccarat.png`,
+  alt: `photo of gameboard from website`
+},
+  {
     id: uuidv4(),
     title: "Simple Twitter bot with Python",
     info:
